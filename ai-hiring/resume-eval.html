@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI 简历评估工作流 · 在线展示</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: "Segoe UI", "Microsoft YaHei", sans-serif; background: #F6F8FB; color: #1E293B; padding: 40px 20px; }
+  .wrap { max-width: 1080px; margin: 0 auto; }
+  h1 { font-size: 26px; margin-bottom: 8px; }
+  .sub { color: #64748B; font-size: 14px; margin-bottom: 34px; line-height: 1.7; }
+  h2 { font-size: 19px; margin: 36px 0 6px; padding-left: 12px; border-left: 4px solid #2563EB; }
+  .desc { color: #64748B; font-size: 13px; margin-bottom: 14px; padding-left: 16px; }
+  figure { background: #fff; border: 1px solid #E2E8F0; border-radius: 12px; overflow: hidden; margin-bottom: 10px; box-shadow: 0 1px 4px rgba(15,23,42,.06); }
+  img { width: 100%; display: block; }
+  figcaption { padding: 10px 16px; font-size: 13px; color: #475569; border-top: 1px solid #F1F5F9; }
+  a.btn { display: inline-block; margin: 26px 0 6px; padding: 9px 20px; background: #2563EB; color: #fff; border-radius: 8px; text-decoration: none; font-size: 14px; font-weight: 600; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>AI 简历评估工作流 · 在线展示</h1>
+  <div class="sub">端到端自动化流水线：投递箱式批处理 → 文本解析 → LLM 结构化评估（冻结岗位标准防漂移）→ 五维评分与门槛判定 → 四色 HTML 报告 → 人工复核兜底。以下均为真实运行产出。</div>
+
+  <h2>① 工作流整体结构</h2>
+  <figure><img src="img/wf-resume-eval.png" alt="AI 简历评估工作流结构图"><figcaption>6 阶段流水线：投递箱 / 文本解析 / LLM 结构化评估 / 评分与结论 / 双格式输出 / 人工复核</figcaption></figure>
+
+  <h2>② 实际运行记录</h2>
+  <figure><img src="img/run-records.png" alt="实际运行记录"><figcaption>真实运行日志（run_log.jsonl 留痕）：末行为本工作流——简历01 评估耗时 135.5 秒，综合结论「通过 96.25/100」</figcaption></figure>
+
+  <h2>③ 简历评估与岗位匹配结果</h2>
+  <figure><img src="img/out-resume-report-top.png" alt="简历评估报告结论速览"><figcaption>结论速览：G01/G02 硬性门槛判定（含猎头经验 0.8 折算）+ 加权总分 96.25 + 五维评分明细入口</figcaption></figure>
+
+  <h2>④ 完整评估报告</h2>
+  <figure><img src="img/out-resume-report-full.png" alt="简历评估报告完整版"><figcaption>完整报告：五维评分（0–4 分）· 证据分条 · 风险标注 · 面试追问清单（四色系统，打印 PDF 分节不跨页）</figcaption></figure>
+
+  <a class="btn" href="resume-report.html">在线查看完整交互版评估报告 →</a>
+</div>
+</body>
+</html>

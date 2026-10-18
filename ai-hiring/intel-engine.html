@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI 招聘情报引擎 · 在线展示</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: "Segoe UI", "Microsoft YaHei", sans-serif; background: #F6F8FB; color: #1E293B; padding: 40px 20px; }
+  .wrap { max-width: 1080px; margin: 0 auto; }
+  h1 { font-size: 26px; margin-bottom: 8px; }
+  .sub { color: #64748B; font-size: 14px; margin-bottom: 34px; line-height: 1.7; }
+  h2 { font-size: 19px; margin: 36px 0 6px; padding-left: 12px; border-left: 4px solid #2563EB; }
+  .desc { color: #64748B; font-size: 13px; margin-bottom: 14px; padding-left: 16px; }
+  figure { background: #fff; border: 1px solid #E2E8F0; border-radius: 12px; overflow: hidden; margin-bottom: 10px; box-shadow: 0 1px 4px rgba(15,23,42,.06); }
+  img { width: 100%; display: block; }
+  figcaption { padding: 10px 16px; font-size: 13px; color: #475569; border-top: 1px solid #F1F5F9; }
+  a.btn { display: inline-block; margin: 26px 0 6px; padding: 9px 20px; background: #2563EB; color: #fff; border-radius: 8px; text-decoration: none; font-size: 14px; font-weight: 600; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>AI 招聘情报引擎 · 在线展示</h1>
+  <div class="sub">多源情报流水线：9 个 RSS/API 源 + WebSearch 搜索通道 → 时效硬过滤（&gt;30 天丢弃）→ 三重去重 → LLM 结构化分析（中英双语）→ 四维评分 → HTML 日报 + 飞书图文卡片双通道推送，每天 08:30 定时自动运行。以下均为真实运行产出。</div>
+
+  <h2>① 工作流整体结构</h2>
+  <figure><img src="img/wf-intel-engine.png" alt="AI 招聘情报引擎结构图"><figcaption>6 阶段流水线：多源采集 / 时效硬过滤 / 三重去重 / LLM 结构化分析 / 四维评分排序 / 双通道输出</figcaption></figure>
+
+  <h2>② 实际运行记录</h2>
+  <figure><img src="img/run-records.png" alt="实际运行记录"><figcaption>真实运行日志（run_log.jsonl 留痕）：采集-去重-分析漏斗（130 → -106 → 24 → 相关 23）+ 飞书卡片推送成功记录</figcaption></figure>
+
+  <h2>③ 最终输出结果</h2>
+  <figure><img src="img/out-intel-daily.png" alt="AI 招聘情报日报"><figcaption>AI 招聘情报日报（HTML 四色版式）：P0/P1 分级排序 · 中英双语摘要 · outdated 隔离区 · 单源多样性上限防霸屏</figcaption></figure>
+
+  <a class="btn" href="intel-daily.html">在线查看完整版情报日报 →</a>
+</div>
+</body>
+</html>
