@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>AI 招聘双工作流 · 在线展示</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: "Segoe UI", "Microsoft YaHei", sans-serif; background: #F6F8FB; color: #1E293B; padding: 40px 20px; }
+  .wrap { max-width: 1080px; margin: 0 auto; }
+  h1 { font-size: 26px; margin-bottom: 8px; }
+  .sub { color: #64748B; font-size: 14px; margin-bottom: 36px; line-height: 1.7; }
+  h2 { font-size: 19px; margin: 38px 0 6px; padding-left: 12px; border-left: 4px solid #2563EB; }
+  .desc { color: #64748B; font-size: 13px; margin-bottom: 14px; padding-left: 16px; }
+  figure { background: #fff; border: 1px solid #E2E8F0; border-radius: 12px; overflow: hidden; margin-bottom: 10px; box-shadow: 0 1px 4px rgba(15,23,42,.06); }
+  img { width: 100%; display: block; }
+  figcaption { padding: 10px 16px; font-size: 13px; color: #475569; border-top: 1px solid #F1F5F9; }
+  a.btn { display: inline-block; margin: 4px 0 0 16px 16px; padding: 8px 18px; background: #2563EB; color: #fff; border-radius: 8px; text-decoration: none; font-size: 14px; font-weight: 600; }
+  a.btn.ghost { background: #fff; color: #2563EB; border: 1px solid #BFDBFE; margin-left: 10px; }
+  .cta { margin: 26px 0 6px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <h1>AI 招聘双工作流 · 在线展示</h1>
+  <div class="sub">两条端到端自动化流水线：① AI 简历评估工作流（投递箱 → LLM 结构化评估 → 四色报告）② AI 招聘情报引擎（多源采集 → 时效过滤 → LLM 分析 → 双通道推送）。以下图片均为真实运行产出。</div>
+
+  <h2>① 工作流整体结构</h2>
+  <figure><img src="img/wf-resume-eval.png" alt="AI 简历评估工作流结构图"><figcaption>AI 简历评估工作流：6 阶段流水线，冻结岗位标准防评分漂移，人工复核兜底</figcaption></figure>
+  <figure><img src="img/wf-intel-engine.png" alt="AI 招聘情报引擎结构图"><figcaption>AI 招聘情报引擎：三道时效防线 + 三重去重 + 四维评分，每天 08:30 定时自动运行</figcaption></figure>
+
+  <h2>② 实际运行记录</h2>
+  <figure><img src="img/run-records.png" alt="实际运行记录"><figcaption>摘自 run_log.jsonl 的真实运行数据：采集-去重-分析漏斗、耗时、推送与评估结果，全链路留痕可回溯</figcaption></figure>
+
+  <h2>③ 最终输出结果</h2>
+  <figure><img src="img/out-intel-daily.png" alt="情报日报"><figcaption>AI 招聘情报日报（HTML 四色版式）：P0/P1 分级 · 中英双语 · outdated 隔离区</figcaption></figure>
+
+  <h2>④ 简历评估与岗位匹配结果</h2>
+  <figure><img src="img/out-resume-report-top.png" alt="简历评估报告结论速览"><figcaption>评估报告结论速览：G01/G02 硬性门槛判定 + 加权总分 96.25 + 五维评分明细</figcaption></figure>
+  <figure><img src="img/out-resume-report-full.png" alt="简历评估报告完整版"><figcaption>完整评估报告：五维评分（0–4 分）· 证据分条 · 风险标注 · 面试追问清单（四色系统，打印分节不跨页）</figcaption></figure>
+
+  <div class="cta">
+    <a class="btn" href="resume-report.html">在线查看：简历评估报告</a>
+    <a class="btn ghost" href="intel-daily.html">在线查看：情报日报</a>
+  </div>
+</div>
+</body>
+</html>
